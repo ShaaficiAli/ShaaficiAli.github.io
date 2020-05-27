@@ -1,0 +1,23 @@
+body{
+	background-color: pink;
+}
+
+div{
+	background-color: lightblue;
+	margin-left: 80px;
+	margin-top: 20px;
+	font-size: 12px;
+}
+select{
+	font-size: 15px;
+}
+
+h1{
+	margin-left: 80px;
+	font-style: italic;
+}
+
+img{
+	width: 200px;
+	height: auto;
+}
