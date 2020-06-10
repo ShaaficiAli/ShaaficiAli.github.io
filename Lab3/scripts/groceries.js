@@ -24,7 +24,7 @@ var products = [
 		price: 10.00
 	},
 	{
-		name: "BurgerHelper",
+		name: "burgerhelper",
 		vegetarian: false,
 		glutenFree: false,
 		organic: false,
@@ -59,7 +59,7 @@ var products = [
 		price: 15.00
 	},
 	{
-		name: "Candy",
+		name: "candy",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
