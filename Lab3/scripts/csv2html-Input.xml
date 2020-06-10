@@ -1,0 +1,73 @@
+<System name = "csv2html">
+	<Function name = "find-csv2htm">
+		<Input type = "arg">
+			<VarSet name="infilename">
+				<Var name="exists">
+					<Value name="yes"/>
+        			<Value name="no" failure="true"/>
+      			</Var>
+      			<Var name="FollowsCsvFormat">
+      				<Value name="yes"/>
+      				<Value name="no" failure="true"/>
+      			</Var>
+      			<Var name="EndsWithCsv">
+      				<Value name="yes"/>
+      				<Value name="no" failure="true"/>
+      			</Var>
+      			<Var name="ProperPath">
+      				<Value name="yes"/>
+      				<Value name="no" failure="true"/>
+      			</Var>
+      		</VarSet>
+      		
+      		<Var name="outfilename">
+      			<value name = "OutFileNameNull" property = "defaultOutfileName"/>
+
+      			<value name = "OutFileNameEmpty" property = "defaultOutfileName"/>
+
+      			<value name = "defaultOutFile" when = "defaultOutfileName"/>
+      			<value name = "ValidOutFileName" />
+      		</Var>
+      		
+      		<Var name = "encoding">
+      			<Value name = "null" property = "defaultEncoding"/>
+      			<value name = "empty" property = "defaultEncoding"/>
+      			<value name = "UTF-8" when = "defaultEncoding"/>
+      			<value name = "US-ASCII"/>
+      			<value name = "ISO-8859"/>
+      			<value name = "UTF-16BE"/>
+      			<value name = "UTF-16LE"/>
+      			<value name = "UTF-16"/>
+      		</Var>
+      		</VarSet>
+      		
+      		<VarSet name = "cssClasses">
+      			<Var name = "trRows">
+      				<value name = "filled" whenNot = "NocssClasses"/>
+      			</Var>
+      			<Var name = "tdRows">
+      				<value name = "notEmpty" whenNot = "NocssClasses"/>
+      			</Var>
+      			<Var name = "nullCssClasses">
+      				<value name = "nullArray" property = "NocssClasses"/>
+      			</Var>
+      		</VarSet>
+
+      		<VarSet name = "completeHTML">
+      			<Var name = "completeHTML.boolean">
+      				<value name = "true" property = "GenerateCompleteHtml"/>
+      				<value name = "false" property = "OnlyTableElements"/>
+      			</Var>
+
+      		</VarSet>
+
+      		<VarSet name = "header">
+      			<Var name = "header.boolean">
+      				<value name = "true"/>
+      				<value name = "false"/>
+      			</Var>
+      		</VarSet>
+</Input>
+</Function>
+</System>
+

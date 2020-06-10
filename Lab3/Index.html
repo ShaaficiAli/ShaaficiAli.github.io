@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+	<h1>HashiSuperMarket</h1>
+  <h3>Client Information</h3>
+  <p>Tell us a bit about you.</p>
+	Choose a Category :
+	<form id="dietSelect" name="dietSelect"  >
+		<input type = "checkbox" value = "Vegetarian" onchange="populateListProductChoices('dietSelect', 'displayProduct')" >Vegetarian<br>
+		<input type = "checkbox" value = "GlutenFree" onchange="populateListProductChoices('dietSelect', 'displayProduct')" >Glutenfree<br>		
+		<input type = "checkbox" value = "Organic" onchange="populateListProductChoices('dietSelect', 'displayProduct')" >Organic<br>
+		<input type = "checkbox" value = "None" onchange="populateListProductChoices('dietSelect', 'displayProduct')" >None<br>
+	</form>
+	<button class="" onclick="openInfo(event, 'Products')">Next</button>
+	
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We preselected products based on your restrictions.</p>
+	 Choose items to buy:
+	 <div id="displayProduct"></div>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart.
+	</button>
+	<button class="" onclick="openInfo(event, 'Client')">Previous</button>
+	<button class="" onclick="openInfo(event, 'Cart')">Next</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div>
+  <button class="" onclick="openInfo(event, 'Products')">Previous</button>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+<footer>
+		<p>Created by Shaafici Ali 8666419</p>
+</footer>
+</html>
