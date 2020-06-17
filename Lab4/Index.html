@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+	<title>Shaaficis Barbershop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+</head>
+	<div class="jumbotron text-center">
+		<h1>Welcome to QuestLoves barber groove shop.</h1>
+		<p>At QuestLoves barber groove shop enjoy the funk while we make your hair do the same</p><br>
+		<p> Meet the people who will guide you through these smooth times</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>The legend himself QuestLove</h3>
+				<img src="images/questlove.jpg" class="img-fluid" width="200" height="200">
+				<p>QuestLove has worked on his fro for years and has discovered teh way to give the user any haircut they want. This was learned as he taught himself the true meaning of smooth</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>The purple god prince</h3>
+				<img src="images/PRINCE.jpg" class="img-fluid" width="200" height="200">
+				<p>Specializes in colouring hair through music. His skill will having you wating for breakfast will looking at the purple rain</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>Hitmaker Tpain</h3>
+				<img src="images/tpain.jpg" class="img-fluid" width="200" height="200">
+				<p>After being chopped and Skrewed Tapin decided it was best to chop hair. His autotune isn't the only crisp thing about him. He we make you say "Can't believe it"</p>
+			</div>
+
+		</div>
+		
+	</div>
+	<div class="jumbotron text-center">
+		<h1> Here are the hair styles offered</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Short hair style</h3>
+				<img src="images/shorthair.jpg" class="img-fluid" width="200" height="200">
+			</div>
+			<div class="col-sm-4">
+				<h3>Medium hair style</h3>
+				<img src="images/mediumhair.jpg" class="img-fluid" width="200" height="200">
+			</div>
+			<div class="col-sm-4">
+				<h3>Long hair style</h3>
+				<img src="images/longhair.jpg" class="img-fluid" width="200" height="200">
+			</div>
+
+	</div>
+	<div class="container">
+		<h2> Services offered</h2>
+		<p>Here is what the crew can do for you</p>
+		<table class="table table-primary table-hover">
+			<thead>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Haircut</td>
+                <td>Given by questLove, 20$</td>
+            </tr>
+            <tr>
+                <td>Outline</td>
+                <td>Given by Tpain, 16$</td>
+            </tr>
+            <tr>
+                <td>Coloring</td>
+                <td>Given by prince, 15$ </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+<div class="container">
+        
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class ="form-check">
+    						<label class="form-check-label">
+    							<input type="checkbox" class="form-check-input" value="">Colouring
+    						</label>
+    					</div>
+    					<div class ="form-check">
+    						<label class="form-check-label">
+    							<input type="checkbox" class="form-check-input" value="">Haircut
+    						</label>
+    					</div>
+    					<div class ="form-check">
+    						<label class="form-check-label">
+    							<input type="checkbox" class="form-check-input" value="">Outline
+    						</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>What date?</p>
+                        
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="form-group">
+  							<label for="Email">email</label>
+  							<input type="text" class="form-control" id="email">
+						</div>
+						<div class="form-group">
+  							<label for="Phonenumber">Password:</label>
+  							<input type="phone" class="form-control" id="phone">
+						</div>
+						<button type="button" class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
+
+
