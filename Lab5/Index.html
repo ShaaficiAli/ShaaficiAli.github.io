@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+	<title>Shaaficis Barbershop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    
+ 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+    <script src="scripts/service.js"></script>
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#Barbers"><img src="images/icons8-user-male-skin-type-5-50.png" alt="logo" style="width:30px;">Barbers</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#hairstyles"><img src="images/icons8-afro-pick-50.png" alt="logo" style="width:30px;">Hairstyles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services"><img src="images/icons8-user-menu-male-50.png" alt="logo" style="width:30px;">Services</a>
+      </li>   
+      <li class="nav-item">
+        <a class="nav-link" href="#Information"><img src="images/icons8-confirm-50.png" alt="logo" style="width:30px;">Purchase</a>
+      </li>
+   </ul>
+  </div>  
+</nav>
+<br>
+	<div class="jumbotron text-center">
+		<h1>Welcome to QuestLoves barber groove shop.</h1>
+		<p>At QuestLoves barber groove shop enjoy the funk while we make your hair do the same</p><br>
+		<p> Meet the people who will guide you through these smooth times</p>
+	</div>
+	<div class="container" id = "Barbers">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>The legend himself QuestLove</h3>
+				<img src="images/questlove.jpg" class="img-fluid" width="200" height="200">
+				<p>QuestLove has worked on his fro for years and has discovered the way to give the user any haircut they want. This was learned as he taught himself the true meaning of smooth</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>The purple god prince</h3>
+				<img src="images/PRINCE.jpg" class="img-fluid" width="200" height="200">
+				<p>Specializes in colouring hair through music. His skill will having you wating for breakfast will looking at the purple rain</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>Hitmaker Tpain</h3>
+				<img src="images/tpain.jpg" class="img-fluid" width="200" height="200">
+				<p>After being chopped and Skrewed Tapin decided it was best to chop hair. His autotune isn't the only crisp thing about him. He we make you say "Can't believe it"</p>
+			</div>
+
+		</div>
+		
+	</div>
+	<div class="jumbotron text-center" id = "hairstyles">
+		<h1> <img src="images/icons8-afro-pick-50.png" alt="logo" style="width:30px;">Here are the hair styles offered</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Short hair style</h3>
+				<img src="images/shorthair.jpg" class="img-fluid" width="200" height="200">
+			</div>
+			<div class="col-sm-4">
+				<h3>Medium hair style</h3>
+				<img src="images/mediumhair.jpg" class="img-fluid" width="200" height="200">
+			</div>
+			<div class="col-sm-4">
+				<h3>Long hair style</h3>
+				<img src="images/longhair.jpg" class="img-fluid" width="200" height="200">
+			</div>
+
+	</div>
+	<div class="container" id = "services">
+		<h2><img src="images/icons8-user-menu-male-50.png" alt="logo" style="width:30px;"> Services offered</h2>
+		<p>Here is what the crew can do for you</p>
+		<table class="table table-primary table-hover">
+			<thead>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Haircut</td>
+                <td>Given by questLove, 20$</td>
+            </tr>
+            <tr>
+                <td>Outline</td>
+                <td>Given by Tpain, 16$</td>
+            </tr>
+            <tr>
+                <td>Coloring</td>
+                <td>Given by prince, 15$ </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+<h1><img src="images/icons8-confirm-50.png" alt="logo" style="width:30px;">Purchase here </h1>
+<div class="container" id = "Information">
+        
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService"><img src="images/icons8-barber-scissors-50.png" alt="logo" style="width:30px;"><b>Choose a service</b></a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class ="form-check">
+    						<label class="form-check-label">
+    							<input id = "colour" type="checkbox" class="form-check-input" value="">Colouring(Prince)
+    						</label>
+    					</div>
+    					<div class ="form-check">
+    						<label class="form-check-label">
+    							<input id = "haircut" type="checkbox" class="form-check-input" value="">Haircut(QuestLove)
+    						</label>
+    					</div>
+    					<div class ="form-check">
+    						<label class="form-check-label">
+    							<input id = "outline" type="checkbox" class="form-check-input" value="">Outline(Tpain)
+    						</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate"><img src="images/icons8-calendar-50.png" alt="logo" style="width:30px;"><b>Choose a date</b></a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>What date?</p>
+                        
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date</label>
+                            <div class="col-10">
+                                <input  type="date" value="2020-06-23" id="dateInput" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo"><img src="images/icons8-mastercard-credit-card-50.png" alt="logo" style="width:30px;"><b>Your information</b></a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="form-group">
+  							<label for="Email">email</label>
+  							<input type="text" class="form-control" id="email">
+						</div>
+						<div class="form-group">
+  							<label for="Phonenumber">Phone Number(ex:XXX-XXX-XXXX):</label>
+  							<input type="text" class="form-control" id="phone">
+						</div>
+						<div class="form-group">
+  							<label for="credit">Credit card(in the case of a cancellation) (e.g XXXX-XXXX-XXXX):</label>
+  							<input type="text" class="form-control" id="credit">
+						</div>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
+
+
