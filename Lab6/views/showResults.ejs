@@ -1,0 +1,45 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+<body>
+    <h1>Survey analysis</h1>
+    <h2>Colors</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].color %> :  <%= results[0][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>Websites</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].website %> :  <%= results[1][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>Important style</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].style %> :  <%= results[2][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>Ui design is more important than back end functionality</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].UIDesignImportance %> :  <%= results[3][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>Maximum elements that should be in a UI</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].maxuielem %> element(s):   <%= results[4][i].count %></li>
+    <% } %>
+    </ul>
+    <h2>Discovery of importance of UI</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li>Date: <%= results[5][i].discovery %> : <%= results[5][i].count %></li>
+    <% } %>
+    </ul>
+</body>
+</html>
