@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+button[name="muaythai"]{
+  height: 100px;
+  width: 200px;
+}
+button[name="bjj"]{
+  height: 100px;
+  width: 200px;
+}
+button[name="mma"]{
+  height: 100px;
+  width: 200px;
+}
+
+div.videos{
+  border-style: solid;
+  border-radius: 10px;
+}
+
+div.postBoard{
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: black;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+ul[name="helplist"]{
+  list-style-position: inside;
+  list-style-type: circle;
+  list-style: circle;
+  font-size: 40px;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
